@@ -1,0 +1,63 @@
+:root {
+  --bg-top: #f5f9ff;
+  --bg-bottom: #e9f0f5;
+  --panel: rgba(247, 250, 253, 0.78);
+  --line: rgba(55, 82, 108, 0.2);
+  --text: #152536;
+  --muted: #486176;
+  --ink: #f8fbff;
+  --accent: #1f7ccf;
+  --accent-2: #1e9c84;
+
+  --sans: 'SF Pro Text', 'Avenir Next', 'Helvetica Neue', sans-serif;
+  --heading: 'SF Pro Display', 'Avenir Next', 'Helvetica Neue', sans-serif;
+
+  font: 18px/1.45 var(--sans);
+  color: var(--text);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  text-align: center;
+  min-height: 100svh;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  background: linear-gradient(165deg, var(--bg-top), var(--bg-bottom));
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 650;
+  color: var(--text);
+}
+
+h1 {
+  font-size: clamp(2rem, 3.5vw, 3.8rem);
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+
+h2 {
+  font-size: clamp(1.1rem, 1.8vw, 1.4rem);
+  line-height: 1.2;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}

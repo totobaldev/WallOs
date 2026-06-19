@@ -1,0 +1,79 @@
+# Logs and temporary files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Node / JS
+node_modules/
+dist/
+dist-ssr/
+.npm
+.eslintcache
+.parcel-cache
+.cache
+.vite
+.vite-temp
+*.local
+
+# Flutter / Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.pub-cache/
+.pub/
+build/
+/apps/desktop_flutter/build/
+/apps/desktop_flutter/.flutter-plugins
+/apps/desktop_flutter/.flutter-plugins-dependencies
+/apps/desktop_flutter/.pub-cache/
+/apps/desktop_flutter/.pub/
+/apps/desktop_flutter/android/app/debug/
+/apps/desktop_flutter/android/app/profile/
+/apps/desktop_flutter/android/app/release/
+/apps/desktop_flutter/ios/Flutter/.last_build_id
+/apps/desktop_flutter/macos/Flutter/ephemeral/
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.iml
+*.ipr
+*.iws
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.history
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Environment and Secrets
+.env
+.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.secret
+*.secrets
+*.key
+*.pem
+*.cert
+*.token
+*credentials*
+*private_key*
+
+# Symbolication and Obfuscation (Flutter)
+app.*.symbols
+app.*.map.json

@@ -1,0 +1,24 @@
+{
+  "name": "wallos",
+  "private": true,
+  "version": "0.1.0",
+  "description": "WallOs monorepo: app Flutter para macOS y landing web.",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "wallpapers:sync": "node scripts/sync_wallpapers.mjs",
+    "wallpapers:sync:flutter": "node scripts/sync_flutter_wallpapers.mjs",
+    "dev:web": "npm run wallpapers:sync && npm run dev --workspace @wallos/web",
+    "build:web": "npm run wallpapers:sync && npm run build --workspace @wallos/web",
+    "lint:web": "npm run lint --workspace @wallos/web",
+    "preview:web": "npm run wallpapers:sync && npm run preview --workspace @wallos/web",
+    "bootstrap:flutter": "bash scripts/bootstrap_flutter.sh && npm run wallpapers:sync:flutter",
+    "run:flutter:macos": "npm run wallpapers:sync:flutter && cd apps/desktop_flutter && flutter run -d macos",
+    "release:flutter:archive": "bash scripts/archive_macos_appstore.sh"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

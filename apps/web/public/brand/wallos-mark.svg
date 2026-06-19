@@ -1,0 +1,17 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="wallos-bg" x1="28" y1="24" x2="228" y2="232" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1A8ED8" />
+      <stop offset="0.55" stop-color="#1E6FCC" />
+      <stop offset="1" stop-color="#1EA284" />
+    </linearGradient>
+    <linearGradient id="wallos-glow" x1="64" y1="56" x2="182" y2="184" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.58" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0" />
+    </linearGradient>
+  </defs>
+  <rect x="16" y="16" width="224" height="224" rx="54" fill="url(#wallos-bg)" />
+  <rect x="30" y="30" width="196" height="196" rx="46" fill="url(#wallos-glow)" />
+  <path d="M38 170C63 146 87 146 112 170C137 194 161 194 186 170C198 159 207 152 219 147" stroke="#EAF6FF" stroke-opacity="0.55" stroke-width="8" stroke-linecap="round" />
+  <path d="M62 84L86 171L128 105L170 171L194 84" stroke="#F5FCFF" stroke-width="19" stroke-linecap="round" stroke-linejoin="round" />
+</svg>
